@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.junit.Assert;
+import org.junit.ComparisonFailure;
 import org.junit.Test;
 
 public class signUpTest {
@@ -16,8 +17,9 @@ public class signUpTest {
         // Open website
         driver.get("https://google-gruyere.appspot.com/358859087229/newaccount.gtl");
 
-        // Find user name field & enter name
-        driver.findElement(By.name("uid")).sendKeys("duncs6");
+        // Find user name field & enter name (increment by 1 for each test executed)
+        driver.findElement(By.name("uid")).sendKeys("duncs8");
+        //TODO add incrementor on user name
         
         // Find password field & enter password
         driver.findElement(By.name("pw")).sendKeys("password1");
@@ -29,6 +31,10 @@ public class signUpTest {
        WebElement success = driver.findElement(By.className("message"));
         String string = success.getText();
         System.out.println(string);
-        Assert.assertTrue(string.contains("Account creaed."));
+        try{
+        Assert.assertEquals("Account created.", string);
+        } catch(ComparisonFailure e) {
+        	System.out.println(e.getMessage());
+        }
    }
 }
