@@ -17,7 +17,7 @@ public class signUpTest {
         driver.get("https://google-gruyere.appspot.com/358859087229/newaccount.gtl");
 
         // Find user name field & enter name
-        driver.findElement(By.name("uid")).sendKeys("duncs5");
+        driver.findElement(By.name("uid")).sendKeys("duncs6");
         
         // Find password field & enter password
         driver.findElement(By.name("pw")).sendKeys("password1");
@@ -29,6 +29,6 @@ public class signUpTest {
        WebElement success = driver.findElement(By.className("message"));
         String string = success.getText();
         System.out.println(string);
-        Assert.assertTrue(string.contains("Account created."));
+        Assert.assertTrue(string.contains("Account creaed."));
    }
 }
