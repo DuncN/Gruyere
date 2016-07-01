@@ -9,8 +9,7 @@ Experimenting with Selenium Webdriver on the Google Gruyere web app
 - Implement TakesScreenshot on failure
 - Create random username for sign up
 - Find a better way targeting snippets once created
-- Remove comments :-)
-- 
+- Remove comments
 
 ## Cucumber
 - Collaborate with the team :-)
