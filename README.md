@@ -15,3 +15,7 @@ Experimenting with Selenium Webdriver on the Google Gruyere web app
 - Collaborate with the team :-)
 - Define the page objects to increase maintainability
 - Create Step Defs
+
+#Testing Notes
+My testing notes can be found on mindmup here:
+https://www.mindmup.com/#m:g10B6XpjHEuIY4RWlk2aldpdmdRZ2c
