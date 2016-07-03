@@ -20,7 +20,7 @@ Experimenting with Selenium Webdriver on the Google Gruyere web app
 My testing notes can be found on mindmup here:
 https://www.mindmup.com/#m:g10B6XpjHEuIY4RWlk2aldpdmdRZ2c
 
-For the purposes of this ecxercise, I started to use Cucumber as I have framework already set up & we use it for collaborating around stories at work. Unfortunately there was too much company data / information in the framework, so I switched to Selenium WebDriver.
+For the purposes of this exercise, I started to use Cucumber as I have framework already set up & we use it for collaborating around stories at work. Unfortunately there was too much company data / information in the framework, so I switched to Selenium WebDriver.
 
 Also, as I was not collaborating with others on the development of this product, I saw using Cucumber as slightly overkill - I'd be using it as a test tool rather than the collaboration tool it is intended to be.
 
